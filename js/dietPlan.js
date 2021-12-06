@@ -5,7 +5,7 @@ var records_per_page = 5;
 
 var objJson = [
   {
-    adName: `  <div class="divloads">
+    dietPlan: `  <div class="divloads">
                       <div>
                          <img src="./img/img2.png" />
                       </div>
@@ -16,7 +16,7 @@ var objJson = [
                     </div>`,
   },
   {
-    adName: `
+    dietPlan: `
       <div class="divloads">
                       <div>
                          <img src="./img/img3.png" />
@@ -29,7 +29,7 @@ var objJson = [
       `,
   },
   {
-    adName: `
+    dietPlan: `
       <div class="divloads">
                       <div>
                          <img src="./img/img4.png" />
@@ -42,7 +42,7 @@ var objJson = [
       `,
   },
   {
-    adName: `
+    dietPlan: `
      <div class="divloads">
                       <div>
                          <img src="./img/img2.png" />
@@ -55,7 +55,7 @@ var objJson = [
       `,
   },
   {
-    adName: `
+    dietPlan: `
      <div class="divloads">
                       <div>
                          <img src="./img/img5.png" />
@@ -68,7 +68,7 @@ var objJson = [
       `,
   },
   {
-    adName: `
+    dietPlan: `
         <div class="divloads">
                       <div>
                          <img src="./img/img2.png" />
@@ -81,7 +81,7 @@ var objJson = [
       `,
   },
   {
-    adName: ` <div class="divloads">
+    dietPlan: ` <div class="divloads">
                       <div>
                          <img src="./img/img2.png" />
                       </div>
@@ -92,7 +92,7 @@ var objJson = [
                     </div>`,
   },
   {
-    adName: `    <div class="divloads">
+    dietPlan: `    <div class="divloads">
                       <div>
                          <img src="./img/img2.png" />
                       </div>
@@ -103,7 +103,7 @@ var objJson = [
                     </div>`,
   },
   {
-    adName: ` <div class="divloads">
+    dietPlan: ` <div class="divloads">
                       <div>
                          <img src="./img/img2.png" />
                       </div>
@@ -114,7 +114,7 @@ var objJson = [
                     </div>`,
   },
   {
-    adName: ` <div class="divloads">
+    dietPlan: ` <div class="divloads">
                       <div>
                          <img src="./img/img2.png" />
                       </div>
@@ -125,7 +125,7 @@ var objJson = [
                     </div>`,
   },
   {
-    adName: `
+    dietPlan: `
          <div class="divloads">
                       <div>
                          <img src="./img/img2.png" />
@@ -138,7 +138,7 @@ var objJson = [
       `,
   },
   {
-    adName: `  <div class="divloads">
+    dietPlan: `  <div class="divloads">
                       <div>
                          <img src="./img/img2.png" />
                       </div>
@@ -180,7 +180,7 @@ function changePage(page) {
     i < page * records_per_page && i < objJson.length;
     i++
   ) {
-    listing_div.innerHTML += objJson[i].adName;
+    listing_div.innerHTML += objJson[i].dietPlan;
   }
   
   if (page == 1) {

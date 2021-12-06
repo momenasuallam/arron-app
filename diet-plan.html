@@ -1,269 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/Logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+      integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/newstyle.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Workout</title>
-  <link rel="shortcut icon" type="image/x-icon" href="./img/Logo.png" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
-    integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./css/newstyle.css" />
-  <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
 
-  <link rel="stylesheet" href="./css/app.css" />
-</head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./img/Logo.png" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#">All Plans</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Browse Workouts
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Muscle Building</a></li>
+                  <li><a class="dropdown-item" href="#">Weight Loss</a></li>
+                  <li><a class="dropdown-item" href="#">GAIN STRENGTH</a></li>
+                  <li><a class="dropdown-item" href="#">GET FIT</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Community</a>
+              </li>
+            </ul>
+            <form class="d-flex fasearch">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+            <div class="userimg">
+              <img src="./img/user-profile-icon.png" />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./img/Logo.png" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px">
-            <li class="nav-item">
-              <a class="nav-link" href="#">All Plans</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Browse Workouts
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Muscle Building</a></li>
-                <li><a class="dropdown-item" href="#">Weight Loss</a></li>
-                <li><a class="dropdown-item" href="#">GAIN STRENGTH</a></li>
-                <li><a class="dropdown-item" href="#">GET FIT</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Community</a>
-            </li>
-          </ul>
-          <form class="d-flex fasearch">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn" type="submit">
-              <i class="fa fa-search"></i>
-            </button>
-          </form>
-          <div class="userimg">
-            <img src="./img/user-profile-icon.png" />
+    <main class="bg1">
+      <div class="row mainrowsearch tabswrapper">
+        <div class="col-lg-3 col-md-3">
+          <div class="filtersearch">
+            <div>
+              <div class="container-fluid">
+                <hr class="line2" />
+                <div class="fstpheas">
+                  <h3>Diet Plan</h3>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="dietplanloads" id="dietplanloadid"></div>
+                <div class="paginationdiv filtersbtn">
+                  <a
+                    href="javascript:prevPage()"
+                    id="btn_prevd"
+                    class="btnfilout"
+                    >Previous</a
+                  >
+                  <a
+                    href="javascript:nextPage()"
+                    id="btn_nextd"
+                    class="btnfilout"
+                    >Next</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-9">
+          <div class="mainsidedivplans">
+            <div class="planswithdate">
+              <div class="divtpsiz">
+                <div class="divsizp">
+                  <span>Sun</span>
+                  <p>8</p>
+                </div>
+                <div class="divsizp">
+                  <span>Mon</span>
+                  <p>9</p>
+                </div>
+                <div class="divsizp">
+                  <span>Tue</span>
+                  <p>10</p>
+                </div>
+                <div class="divsizp">
+                  <span>Wed</span>
+                  <p>11</p>
+                </div>
+                <div class="divsizp">
+                  <span>Thu</span>
+                  <p>12</p>
+                </div>
+                <div class="divsizp">
+                  <span>fri</span>
+                  <p>13</p>
+                </div>
+                <div class="divsizp">
+                  <span>sat</span>
+                  <p>14</p>
+                </div>
+              </div>
+              <div class="dietmainbt">
+                <div class="divbtsiz">
+                  <div class="divsizp brbb">
+                    <div class="disdietb">
+                      <img src="./img/img2.png" />
+                      <h2>Apple & Oranges</h2>
+                    </div>
+                    <div class="badgesdivdiet">
+                      <span class="badgred">P: 18</span>
+                      <span class="badgblue">C: 28</span>
+                      <span class="badggreen">F: 10</span>
+                      <span class="badgblack">Cals: 251</span>
+                    </div>
+                  </div>
+                  <div class="divsizp brbb">
+                    <div class="disdietb">
+                      <img src="./img/img2.png" />
+                      <h2>Apple & Oranges</h2>
+                    </div>
+                    <div class="badgesdivdiet">
+                      <span class="badgred">P: 18</span>
+                      <span class="badgblue">C: 28</span>
+                      <span class="badggreen">F: 10</span>
+                      <span class="badgblack">Cals: 251</span>
+                    </div>
+                  </div>
+                  <div class="divsizp brbb">
+                    <div class="disdietb">
+                      <img src="./img/img2.png" />
+                      <h2>Apple & Oranges</h2>
+                    </div>
+                    <div class="badgesdivdiet">
+                      <span class="badgred">P: 18</span>
+                      <span class="badgblue">C: 28</span>
+                      <span class="badggreen">F: 10</span>
+                      <span class="badgblack">Cals: 251</span>
+                    </div>
+                  </div>
+                  <div class="divsizp brbb"></div>
+                </div>
+                <div class="divbtsiz">
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                </div>
+                <div class="divbtsiz">
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                </div>
+                <div class="divbtsiz">
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                </div>
+                <div class="divbtsiz">
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                </div>
+                <div class="divbtsiz">
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                </div>
+                <div class="divbtsiz">
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                  <div class="divsizp brbb"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </nav>
-  </header>
+    </main>
 
-  <main class="bg1">
-    <div class="row mainrowsearch tabswrapper">
-      <div class="col-lg-3 col-md-3">
-        <div class="filtersearch">
-          <div>
-            <div class="container-fluid">
-              <hr class="line2" />
-              <div class="fstpheas">
-                <h3>Diet Plan Search</h3>
-              </div>
-            </div>
-            <div class="container-fluid">
-              <div class="dietplanloads" id="dietplanloadid">
-              </div>
-              <div class="paginationdiv filtersbtn">
-                <a href="javascript:prevPage()" id="btn_prevd" class="btnfilout">Previous</a>
-                <a href="javascript:nextPage()" id="btn_nextd" class="btnfilout">Next</a>
-              </div>
-            </div>
-
-
-
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-9 col-md-9">
-        <div class="mainsidedivplans">
-          <div class="planswithdate">
-            <div class="divtpsiz">
-              <div class="divsizp">
-                <span>Sun</span>
-                <p>8</p>
-              </div>
-              <div class="divsizp">
-                <span>Mon</span>
-                <p>9</p>
-              </div>
-              <div class="divsizp">
-                <span>Tue</span>
-                <p>10</p>
-              </div>
-              <div class="divsizp">
-                <span>Wed</span>
-                <p>11</p>
-              </div>
-              <div class="divsizp">
-                <span>Thu</span>
-                <p>12</p>
-              </div>
-              <div class="divsizp">
-                <span>fri</span>
-                <p>13</p>
-              </div>
-              <div class="divsizp">
-                <span>sat</span>
-                <p>14</p>
-              </div>
-            </div>
-           <div class="dietmainbt">
-              <div class="divbtsiz">
-              <div class="divsizp brbb">
-                <div class="disdietb">
-                  <img src="./img/img2.png" />
-                  <h2>Apple &
-                    Oranges</h2>
-                </div>
-                <div class="badgesdivdiet">
-                  <span class="badgred">P: 18</span>
-                  <span class="badgblue">C: 28</span>
-                  <span class="badggreen">F: 10</span>
-                  <span class="badgblack">Cals: 251</span>
-                </div>
-              </div>
-                <div class="divsizp brbb">
-                <div class="disdietb">
-                  <img src="./img/img2.png" />
-                  <h2>Apple &
-                    Oranges</h2>
-                </div>
-                <div class="badgesdivdiet">
-                  <span class="badgred">P: 18</span>
-                  <span class="badgblue">C: 28</span>
-                  <span class="badggreen">F: 10</span>
-                  <span class="badgblack">Cals: 251</span>
-                </div>
-              </div>
-                <div class="divsizp brbb">
-                <div class="disdietb">
-                  <img src="./img/img2.png" />
-                  <h2>Apple &
-                    Oranges</h2>
-                </div>
-                <div class="badgesdivdiet">
-                  <span class="badgred">P: 18</span>
-                  <span class="badgblue">C: 28</span>
-                  <span class="badggreen">F: 10</span>
-                  <span class="badgblack">Cals: 251</span>
-                </div>
-              </div>
-               <div class="divsizp brbb">
-              
-              </div>
-            </div>
-               <div class="divbtsiz">
-             
-               <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-            </div>
-              <div class="divbtsiz">
-             
-               <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-            </div>
-              <div class="divbtsiz">
-             
-               <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-            </div>
-              <div class="divbtsiz">
-             
-               <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-            </div>
-              <div class="divbtsiz">
-             
-               <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-            </div>
-              <div class="divbtsiz">
-             
-               <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-              <div class="divsizp brbb">
-              
-              </div>
-            </div>
-           </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="./js/dietPlan.js"></script>
-
-</body>
-
+    <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.5.1.js"
+    ></script>
+    <script src="./js/dietPlan.js"></script>
+  </body>
 </html>

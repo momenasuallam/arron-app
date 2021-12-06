@@ -294,7 +294,6 @@
   border-radius: 10px;
   padding: 30px 0 0;
   width: 1050px;
-  
 }
 .dietplanloads {
   padding: 15px 0;
@@ -304,6 +303,7 @@
 .divloads {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   background: #1c1d27;
   border-radius: 5px;
@@ -313,11 +313,11 @@
   max-width: 200px;
 }
 .divloads div:first-child {
-  width: 30%;
+  /* width: 30%; */
 }
 .divloads div:last-child {
-  width: 70%;
-  padding: 12px;
+  /* width: 70%; */
+  padding: 6px;
 }
 .divloads div img {
   width: 60px;
@@ -349,90 +349,91 @@
   display: none !important;
 }
 
-.divsizp{
-width: 150px;
+.divsizp {
+  width: 150px;
 }
-.divsizp span{
-font-weight: 500;
-font-size: 12px;
-line-height: 18px;
-/* identical to box height */
-display: block;
-text-align: center;
-text-transform: uppercase;
-color: #57596F;
-margin-bottom: 10px;
+.divsizp span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #57596f;
+  margin-bottom: 10px;
 }
-.divsizp p{
-font-weight: bold;
-font-size: 20px;
-line-height: 30px;
-/* identical to box height */
+.divsizp p {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
 
-text-align: center;
-text-transform: uppercase;
-margin-bottom: 15px;
-color: #9D9EB1;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #9d9eb1;
 }
-.divtpsiz{
-    display: flex;
-    border-bottom: 1px solid #313240;
+.divtpsiz {
+  display: flex;
+  border-bottom: 1px solid #313240;
 }
-.brbb{
-  
-    border-right: 1px solid #313240;
-    padding: 8px 0px 2px;
-    height: 160px;
+.brbb {
+  border-right: 1px solid #313240;
+  padding: 8px 0px 2px;
+  height: 160px;
 }
-.divbtsiz .brbb:last-child{
-    border-bottom: 0px solid !important;
+.divbtsiz .brbb:last-child {
+  border-bottom: 0px solid !important;
 }
-.disdietb{
-    display: flex;
-    align-items: center;
-    padding: 0 8px;
+.disdietb {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
 }
-.disdietb img{
-width: 57px;
-height: 57px;
-margin-right: 6px;
+.disdietb img {
+  width: 57px;
+  height: 57px;
+  margin-right: 6px;
 }
-.disdietb h2{
-    font-weight: 600;
-font-size: 15px;
-line-height: 22px;
+.disdietb h2 {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
-.badgesdivdiet{
-    padding: 8px 8px 0;
-      border-bottom: 1px solid #313240;
+.badgesdivdiet {
+  padding: 8px 8px 0;
+  border-bottom: 1px solid #313240;
 }
-.badgesdivdiet span{
-    display: inline-block;
-    font-weight: 300;
-    font-size: 13px;
-line-height: 19px;
-color: #FFFFFF;
-padding: 6px 10px;
-border-radius: 200px;
+.badgesdivdiet span {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 200px;
 }
-.badgred{
-    background: #E44545;
-
+.badgred {
+  background: #e44545;
 }
-.badgblue{
-background: #4598E4;
+.badgblue {
+  background: #4598e4;
 }
-.badggreen{
-background: #40AE58;
+.badggreen {
+  background: #40ae58;
 }
-.badgblack{
-background: #2B2C38;
+.badgblack {
+  background: #2b2c38;
 }
-.dietmainbt{
-    display: flex;
+.dietmainbt {
+  display: flex;
 }
-.dietmainbt .divbtsiz:last-child .brbb{
-    border-right: 0px !important;
+.dietmainbt .divbtsiz:last-child .brbb {
+  border-right: 0px !important;
+}
+.paginationdiv a {
+  width: 100% !important;
 }
